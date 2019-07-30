@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pulsar AI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" th:href="@{/styles/style3.css}">
+    </head>
+
+    <body>
+        <main>
+            
+            <header>
+                <div >
+                    <nav class="n">
+                        <ul>
+                            <li><a href="https://gwyche.wordpress.com">BLOG</a></li>
+                            <li><a href="https://github.com/gwyche/">GITHUB</a></li>
+                            <li><a href="https://www.linkedin.com/in/gregory-wyche/">LINKEDIN</a></li>
+                            <li><a href="https://gwyche.files.wordpress.com/2019/05/gregory-wyche-resume.pdf">RESUME</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+
+            <section>
+            	<img th:src="@{/images/pexels-photo-1340185logosquare2blue.png}"/>
+                <!-- <img src="static/pexels-photo-1340185logosquare2blue.png" alt="Cube Logo"/>  -->
+                <div class="b">
+                        <div class="container">
+                                <div class="row"></div>
+                                <div class="row">
+                                    <div class="col-md"></div>
+                                      <div class="col-lg">
+                                            
+                                             <div class="card" style="width: 30rem;">
+                                                    <form th:action="@{/}" th:object="${request}" method="post" autocomplete="off" >
+                                                            <div class="form-group">
+                                                                 <input type="text" th:field="*{layers}" placeholder="LAYERS" class="form-control"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <button class="btn btn-dark" name="Submit" value="Submit" type="Submit">Begin Analysis</button>
+                                                            </div>
+                                                            
+                                                    </form>
+                                             </div>
+                                            <p>Pulsar Discrimination Success Rate: <span th:text="${result}"></span>%</p>
+                                            <br>
+                                            <p>This web application utilizes a fully-connected, multi-layer perceptron neural network to analyze pre-classified radio sources from the High Time Resolution Universe Survey (South). The user can designate the number of layers used to analyze the data. After training, an evaluation test on a subset of datapoints is performed and correct guesses by the trained AI are tabulated. The final percentage of success is displayed above. Training data is stored in a relational database. The full dataset consists of 17800 radio sources; 17400 are used for 3 rounds of training of 52200 and 1300 are used for evaluation.</p>
+                                     </div>
+                                  <div class="col-md"></div>
+                               </div>
+                            </div>
+                </div>
+            </section>
+
+
+        </main>
+    </body>
+    <footer>
+        <p>Copyright 2019 Gregory Wyche</p>    
+    </footer>
+
+
+</html>

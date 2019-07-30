@@ -1,0 +1,29 @@
+.card{
+    border-color: rgb(56, 54, 56);
+    border-width: 2px;
+}
+
+li{
+   color: rgb(28, 208, 151);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+ul{
+    background-color: rgb(56, 54, 54);
+}
+
+h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(56, 54, 54);
+}
+
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+}

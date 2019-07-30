@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(255, 21, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.namebox{
+   
+    height: 75px;
+    width: 250px;
+    margin: auto;
+
+}
+
+img{
+    width: 1500px;
+    height: 1275px;
+}
+
+.centerme{
+    margin: auto;
+}
+
+.n{
+    position: fixed;
+    	
+    display: flex;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+header * {
+display: inline;
+height: 50px;
+text-decoration: none;
+color: rgb(255, 21, 0);
+font-size: large;
+}
+
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+	
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    font-size: x-small;
+}
+
+.b {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  p{
+      color: white;
+      font-size: small;
+     text-align: justify;
+  }
+
+  .card{
+      margin: auto;
+      background-color: black;
+      opacity: .85;
+  }
+
+::placeholder{
+    color: white;
+    font-size: small;
+    text-align: center;
+
+}
+
+input[type="text"] {
+    background-color: greenyellow;
+    width: 100px;
+    margin: auto;
+    color: greenyellow;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.col-lg{
+	  background-color: black;
+      opacity: .85;
+}
+
+
+
+
